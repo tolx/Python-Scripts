@@ -7,6 +7,9 @@
 
 #!/usr/bin/python
 
+def in_to_cent(first):
+	return first * 12
+
 def main():
 	print ("Metric System Conversion")
 	metrics = ["Inches", "Centimeters"]
@@ -23,6 +26,11 @@ def main():
 	# ask for user input
 	print ("What would you like to convert?")
 	choice = input("> ")
-
+	
+	if choice == 1:
+		value = int(input("inches = "))
+	
+	print("result = %d" % in_to_cent(value))
+	
 if __name__ == "__main__":
 	main()
