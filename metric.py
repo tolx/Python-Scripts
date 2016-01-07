@@ -12,9 +12,13 @@ def main():
 	metrics = ["Inches", "Centimeters"]
 	
 	print ("Your Options: ")
-	# taverse through list
+	
+	count = 0	
+	
+	# traverse through list
 	for dispMetrics in metrics:
-		print ("%s") % dispMetrics
+		count+=1
+		print ("%d: %s" % (count, dispMetrics))
 
 	# ask for user input
 	print ("What would you like to convert?")
